@@ -34,37 +34,37 @@ public class Meal_Entry_Page extends javax.swing.JFrame {
         ResultSet rs = DBUTILS.queryExecute(query);
         while(rs.next()){
             String Name=rs.getString("name");
-            String a=rs.getString("1");
-            String b=rs.getString("2");
-            String c=rs.getString("3");
-            String d=rs.getString("4");
-            String e=rs.getString("5");
-            String f=rs.getString("6");
-            String g=rs.getString("7");
-            String h=rs.getString("8");
-            String i=rs.getString("9");
-            String j=rs.getString("10");
-            String k=rs.getString("11");
-            String l=rs.getString("12");
-            String m=rs.getString("13");
-            String n=rs.getString("14");
-            String o=rs.getString("15");
-            String p=rs.getString("16");
-            String q=rs.getString("17");
-            String r=rs.getString("18");
-            String s=rs.getString("19");
-            String t=rs.getString("20");
-            String u=rs.getString("21");
-            String v=rs.getString("22");
-            String w=rs.getString("23");
-            String x=rs.getString("24");
-            String y=rs.getString("25");
-            String z=rs.getString("26");
-            String a1=rs.getString("27");
-            String a2=rs.getString("28");
-            String a3=rs.getString("29");
-            String a4=rs.getString("30");
-            String a5=rs.getString("31");
+            String a=rs.getString("a");
+            String b=rs.getString("b");
+            String c=rs.getString("c");
+            String d=rs.getString("d");
+            String e=rs.getString("e");
+            String f=rs.getString("f");
+            String g=rs.getString("g");
+            String h=rs.getString("h");
+            String i=rs.getString("i");
+            String j=rs.getString("j");
+            String k=rs.getString("k");
+            String l=rs.getString("l");
+            String m=rs.getString("m");
+            String n=rs.getString("n");
+            String o=rs.getString("o");
+            String p=rs.getString("p");
+            String q=rs.getString("q");
+            String r=rs.getString("r");
+            String s=rs.getString("s");
+            String t=rs.getString("t");
+            String u=rs.getString("u");
+            String v=rs.getString("v");
+            String w=rs.getString("w");
+            String x=rs.getString("x");
+            String y=rs.getString("y");
+            String z=rs.getString("z");
+            String a1=rs.getString("aa");
+            String a2=rs.getString("bb");
+            String a3=rs.getString("cc");
+            String a4=rs.getString("dd");
+            String a5=rs.getString("ee");
             String a6=rs.getString("total");
             
             
@@ -107,22 +107,33 @@ public class Meal_Entry_Page extends javax.swing.JFrame {
         meal_entry_table = new javax.swing.JTable();
         enter_button = new javax.swing.JButton();
         dash_button = new javax.swing.JButton();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(25, 111, 61));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        date_me.setBackground(new java.awt.Color(25, 111, 61));
         date_me.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        date_me.setForeground(new java.awt.Color(255, 255, 255));
+        date_me.setBorder(null);
         date_me.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 date_meActionPerformed(evt);
             }
         });
-        jPanel1.add(date_me, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 250, 170, -1));
+        jPanel1.add(date_me, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 180, 170, -1));
 
+        name_me.setBackground(new java.awt.Color(25, 111, 61));
         name_me.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jPanel1.add(name_me, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 300, 170, -1));
+        name_me.setForeground(new java.awt.Color(255, 255, 255));
+        name_me.setBorder(null);
+        jPanel1.add(name_me, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 230, 170, -1));
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -133,44 +144,54 @@ public class Meal_Entry_Page extends javax.swing.JFrame {
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 930, 70));
 
+        breakfast_me.setBackground(new java.awt.Color(25, 111, 61));
         breakfast_me.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jPanel1.add(breakfast_me, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 350, 170, -1));
+        breakfast_me.setForeground(new java.awt.Color(255, 255, 255));
+        breakfast_me.setBorder(null);
+        jPanel1.add(breakfast_me, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 280, 170, -1));
 
+        lunch_me.setBackground(new java.awt.Color(25, 111, 61));
         lunch_me.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jPanel1.add(lunch_me, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 400, 170, -1));
+        lunch_me.setForeground(new java.awt.Color(255, 255, 255));
+        lunch_me.setBorder(null);
+        jPanel1.add(lunch_me, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 330, 170, -1));
 
+        dinner_me.setBackground(new java.awt.Color(25, 111, 61));
         dinner_me.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jPanel1.add(dinner_me, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 450, 170, -1));
+        dinner_me.setForeground(new java.awt.Color(255, 255, 255));
+        dinner_me.setBorder(null);
+        jPanel1.add(dinner_me, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 380, 170, -1));
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("DATE");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 220, -1, -1));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 160, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("NAME");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 280, -1, -1));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 210, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("BREAKFAST");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 330, -1, -1));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 260, -1, -1));
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("LUNCH");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 380, -1, -1));
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 310, -1, -1));
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("DINNER");
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 430, -1, -1));
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 360, -1, -1));
 
         jScrollPane1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS);
         jScrollPane1.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
 
-        meal_entry_table.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        meal_entry_table.setFont(new java.awt.Font("Maiandra GD", 1, 18)); // NOI18N
+        meal_entry_table.setForeground(new java.awt.Color(51, 0, 51));
         meal_entry_table.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -186,23 +207,54 @@ public class Meal_Entry_Page extends javax.swing.JFrame {
         meal_entry_table.setRowHeight(30);
         jScrollPane1.setViewportView(meal_entry_table);
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 130, 530, 420));
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, 590, 420));
 
+        enter_button.setBackground(new java.awt.Color(102, 0, 0));
+        enter_button.setFont(new java.awt.Font("Maiandra GD", 1, 18)); // NOI18N
+        enter_button.setForeground(new java.awt.Color(255, 255, 102));
         enter_button.setText("ENTER");
         enter_button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 enter_buttonActionPerformed(evt);
             }
         });
-        jPanel1.add(enter_button, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 490, 120, -1));
+        jPanel1.add(enter_button, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 420, 170, 40));
 
-        dash_button.setText("DASHBOARD");
+        dash_button.setBackground(new java.awt.Color(25, 111, 61));
+        dash_button.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        dash_button.setIcon(new javax.swing.ImageIcon("C:\\Users\\Fahim MuntasirAkib\\OneDrive\\Documents\\NetBeansProjects\\Mess Management System\\Image\\icons8-dashboard-43letest.png")); // NOI18N
+        dash_button.setBorder(null);
         dash_button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 dash_buttonActionPerformed(evt);
             }
         });
-        jPanel1.add(dash_button, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 550, -1, -1));
+        jPanel1.add(dash_button, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 530, -1, 40));
+
+        jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel7.setText("____________________________________");
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 380, -1, 40));
+
+        jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel8.setText("____________________________________");
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 180, -1, 40));
+
+        jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel9.setText("____________________________________");
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 230, -1, 40));
+
+        jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel10.setText("____________________________________");
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 280, -1, 40));
+
+        jLabel11.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel11.setText("____________________________________");
+        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 330, -1, 40));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -244,10 +296,417 @@ public class Meal_Entry_Page extends javax.swing.JFrame {
              //System.out.println(total_meal);
              
              
-             
-           String query="UPDATE meal_entry SET '"+date+"'='"+total_meal+"'WHERE name='"+name+"'";
+            
+             if("1".equals(date)){
+           String query="UPDATE meal_entry SET a = '"+total_meal+"'WHERE name='"+name+"'";
             try{
             int rs=DBUTILS.queryUpdate(query);
+                       System.out.println("2");
+
+            JOptionPane.showMessageDialog(this,"Update Successful.");
+             showMealEntryTable();
+        }catch(Exception e){
+            e.printStackTrace();
+        }        
+        }
+        if("2".equals(date)){
+                
+           String query="UPDATE meal_entry SET b = '"+total_meal+"'WHERE name='"+name+"'";
+           
+            try{
+            int rs=DBUTILS.queryUpdate(query);
+             
+
+            JOptionPane.showMessageDialog(this,"Update Successful.");
+             showMealEntryTable();
+        }catch(Exception e){
+            e.printStackTrace();
+        }        
+        }     
+         if("3".equals(date)){
+                 
+           String query="UPDATE meal_entry SET c = '"+total_meal+"'WHERE name='"+name+"'";
+           
+            try{
+            int rs=DBUTILS.queryUpdate(query);
+                     
+            JOptionPane.showMessageDialog(this,"Update Successful.");
+             showMealEntryTable();
+        }catch(Exception e){
+            e.printStackTrace();
+        }        
+        }    
+             
+         if("4".equals(date)){
+               
+           String query="UPDATE meal_entry SET d = '"+total_meal+"'WHERE name='"+name+"'";
+           
+            try{
+            int rs=DBUTILS.queryUpdate(query);
+                     
+            JOptionPane.showMessageDialog(this,"Update Successful.");
+             showMealEntryTable();
+        }catch(Exception e){
+            e.printStackTrace();
+        }        
+        }    
+             
+        if("5".equals(date)){
+               
+           String query="UPDATE meal_entry SET e = '"+total_meal+"'WHERE name='"+name+"'";
+           
+            try{
+            int rs=DBUTILS.queryUpdate(query);
+                      
+            JOptionPane.showMessageDialog(this,"Update Successful.");
+             showMealEntryTable();
+        }catch(Exception e){
+            e.printStackTrace();
+        }        
+        }     
+             
+        if("6".equals(date)){
+                
+           String query="UPDATE meal_entry SET f = '"+total_meal+"'WHERE name='"+name+"'";
+           
+            try{
+            int rs=DBUTILS.queryUpdate(query);
+                     
+            JOptionPane.showMessageDialog(this,"Update Successful.");
+             showMealEntryTable();
+        }catch(Exception e){
+            e.printStackTrace();
+        }        
+        }     
+             
+        if("7".equals(date)){
+              
+           String query="UPDATE meal_entry SET g = '"+total_meal+"'WHERE name='"+name+"'";
+           
+            try{
+            int rs=DBUTILS.queryUpdate(query);
+                      
+            JOptionPane.showMessageDialog(this,"Update Successful.");
+             showMealEntryTable();
+        }catch(Exception e){
+            e.printStackTrace();
+        }        
+        }     
+         if("8".equals(date)){
+               
+           String query="UPDATE meal_entry SET h = '"+total_meal+"'WHERE name='"+name+"'";
+           
+            try{
+            int rs=DBUTILS.queryUpdate(query);
+                     
+            JOptionPane.showMessageDialog(this,"Update Successful.");
+             showMealEntryTable();
+        }catch(Exception e){
+            e.printStackTrace();
+        }        
+        }
+         if("9".equals(date)){
+              
+           String query="UPDATE meal_entry SET i = '"+total_meal+"'WHERE name='"+name+"'";
+           
+            try{
+            int rs=DBUTILS.queryUpdate(query);
+                    
+            JOptionPane.showMessageDialog(this,"Update Successful.");
+             showMealEntryTable();
+        }catch(Exception e){
+            e.printStackTrace();
+        }        
+        }
+         if("10".equals(date)){
+                
+          String query="UPDATE meal_entry SET j = '"+total_meal+"'WHERE name='"+name+"'";
+           
+            try{
+            int rs=DBUTILS.queryUpdate(query);
+                      
+
+            JOptionPane.showMessageDialog(this,"Update Successful.");
+             showMealEntryTable();
+        }catch(Exception e){
+            e.printStackTrace();
+        }        
+        }
+         if("11".equals(date)){
+               
+           String query="UPDATE meal_entry SET k = '"+total_meal+"'WHERE name='"+name+"'";
+           
+            try{
+            int rs=DBUTILS.queryUpdate(query);
+                  
+            JOptionPane.showMessageDialog(this,"Update Successful.");
+             showMealEntryTable();
+        }catch(Exception e){
+            e.printStackTrace();
+        }        
+        }
+         if("12".equals(date)){
+                
+           String query="UPDATE meal_entry SET l = '"+total_meal+"'WHERE name='"+name+"'";
+           
+            try{
+            int rs=DBUTILS.queryUpdate(query);
+                    
+            JOptionPane.showMessageDialog(this,"Update Successful.");
+             showMealEntryTable();
+        }catch(Exception e){
+            e.printStackTrace();
+        }        
+        }
+         if("13".equals(date)){
+               
+           String query="UPDATE meal_entry SET m = '"+total_meal+"'WHERE name='"+name+"'";
+           
+            try{
+            int rs=DBUTILS.queryUpdate(query);
+                 
+            JOptionPane.showMessageDialog(this,"Update Successful.");
+             showMealEntryTable();
+        }catch(Exception e){
+            e.printStackTrace();
+        }        
+        }
+         if("14".equals(date)){
+              
+           String query="UPDATE meal_entry SET n = '"+total_meal+"'WHERE name='"+name+"'";
+           
+            try{
+            int rs=DBUTILS.queryUpdate(query);
+                   
+
+            JOptionPane.showMessageDialog(this,"Update Successful.");
+             showMealEntryTable();
+        }catch(Exception e){
+            e.printStackTrace();
+        }        
+        }
+         if("15".equals(date)){
+               
+           String query="UPDATE meal_entry SET o = '"+total_meal+"'WHERE name='"+name+"'";
+           
+            try{
+            int rs=DBUTILS.queryUpdate(query);
+                     
+            JOptionPane.showMessageDialog(this,"Update Successful.");
+             showMealEntryTable();
+        }catch(Exception e){
+            e.printStackTrace();
+        }        
+        }
+         if("16".equals(date)){
+                
+           String query="UPDATE meal_entry SET p = '"+total_meal+"'WHERE name='"+name+"'";
+           
+            try{
+            int rs=DBUTILS.queryUpdate(query);
+                  
+            JOptionPane.showMessageDialog(this,"Update Successful.");
+             showMealEntryTable();
+        }catch(Exception e){
+            e.printStackTrace();
+        }        
+        }
+         if("17".equals(date)){
+                
+           String query="UPDATE meal_entry SET q = '"+total_meal+"'WHERE name='"+name+"'";
+           
+            try{
+            int rs=DBUTILS.queryUpdate(query);
+                     
+
+            JOptionPane.showMessageDialog(this,"Update Successful.");
+             showMealEntryTable();
+        }catch(Exception e){
+            e.printStackTrace();
+        }        
+        }
+         if("18".equals(date)){
+                 
+           String query="UPDATE meal_entry SET r = '"+total_meal+"'WHERE name='"+name+"'";
+           
+            try{
+            int rs=DBUTILS.queryUpdate(query);
+                      
+
+            JOptionPane.showMessageDialog(this,"Update Successful.");
+             showMealEntryTable();
+        }catch(Exception e){
+            e.printStackTrace();
+        }        
+        }
+         if("19".equals(date)){
+                 
+           String query="UPDATE meal_entry SET s = '"+total_meal+"'WHERE name='"+name+"'";
+           
+            try{
+            int rs=DBUTILS.queryUpdate(query);
+                       
+
+            JOptionPane.showMessageDialog(this,"Update Successful.");
+             showMealEntryTable();
+        }catch(Exception e){
+            e.printStackTrace();
+        }        
+        }
+         if("20".equals(date)){
+                
+           String query="UPDATE meal_entry SET t = '"+total_meal+"'WHERE name='"+name+"'";
+           
+            try{
+            int rs=DBUTILS.queryUpdate(query);
+                     
+
+            JOptionPane.showMessageDialog(this,"Update Successful.");
+             showMealEntryTable();
+        }catch(Exception e){
+            e.printStackTrace();
+        }        
+        }
+         if("21".equals(date)){
+                
+           String query="UPDATE meal_entry SET u = '"+total_meal+"'WHERE name='"+name+"'";
+           
+            try{
+            int rs=DBUTILS.queryUpdate(query);
+                     
+
+            JOptionPane.showMessageDialog(this,"Update Successful.");
+             showMealEntryTable();
+        }catch(Exception e){
+            e.printStackTrace();
+        }        
+        }if("22".equals(date)){
+                 
+           String query="UPDATE meal_entry SET v = '"+total_meal+"'WHERE name='"+name+"'";
+           
+            try{
+            int rs=DBUTILS.queryUpdate(query);
+                      
+
+            JOptionPane.showMessageDialog(this,"Update Successful.");
+             showMealEntryTable();
+        }catch(Exception e){
+            e.printStackTrace();
+        }        
+        }
+        if("23".equals(date)){
+                
+           String query="UPDATE meal_entry SET w = '"+total_meal+"'WHERE name='"+name+"'";
+           
+            try{
+            int rs=DBUTILS.queryUpdate(query);
+                      
+
+            JOptionPane.showMessageDialog(this,"Update Successful.");
+             showMealEntryTable();
+        }catch(Exception e){
+            e.printStackTrace();
+        }        
+        }
+        if("24".equals(date)){
+                
+           String query="UPDATE meal_entry SET x = '"+total_meal+"'WHERE name='"+name+"'";
+           
+            try{
+            int rs=DBUTILS.queryUpdate(query);
+                      
+
+            JOptionPane.showMessageDialog(this,"Update Successful.");
+             showMealEntryTable();
+        }catch(Exception e){
+            e.printStackTrace();
+        }        
+        }if("25".equals(date)){
+               
+           String query="UPDATE meal_entry SET y = '"+total_meal+"'WHERE name='"+name+"'";
+           
+            try{
+            int rs=DBUTILS.queryUpdate(query);
+                      
+
+            JOptionPane.showMessageDialog(this,"Update Successful.");
+             showMealEntryTable();
+        }catch(Exception e){
+            e.printStackTrace();
+        }        
+        }if("26".equals(date)){
+                
+           String query="UPDATE meal_entry SET z = '"+total_meal+"'WHERE name='"+name+"'";
+           
+            try{
+            int rs=DBUTILS.queryUpdate(query);
+                     
+
+            JOptionPane.showMessageDialog(this,"Update Successful.");
+             showMealEntryTable();
+        }catch(Exception e){
+            e.printStackTrace();
+        }        
+        }if("27".equals(date)){
+                
+           String query="UPDATE meal_entry SET aa = '"+total_meal+"'WHERE name='"+name+"'";
+           
+            try{
+            int rs=DBUTILS.queryUpdate(query);
+                      
+
+            JOptionPane.showMessageDialog(this,"Update Successful.");
+             showMealEntryTable();
+        }catch(Exception e){
+            e.printStackTrace();
+        }        
+        }if("28".equals(date)){
+                
+           String query="UPDATE meal_entry SET bb = '"+total_meal+"'WHERE name='"+name+"'";
+           
+            try{
+            int rs=DBUTILS.queryUpdate(query);
+                      
+
+            JOptionPane.showMessageDialog(this,"Update Successful.");
+             showMealEntryTable();
+        }catch(Exception e){
+            e.printStackTrace();
+        }        
+        }if("29".equals(date)){
+               
+           String query="UPDATE meal_entry SET cc = '"+total_meal+"'WHERE name='"+name+"'";
+           
+            try{
+            int rs=DBUTILS.queryUpdate(query);
+                     
+
+            JOptionPane.showMessageDialog(this,"Update Successful.");
+             showMealEntryTable();
+        }catch(Exception e){
+            e.printStackTrace();
+        }        
+        }if("30".equals(date)){
+                
+           String query="UPDATE meal_entry SET dd = '"+total_meal+"'WHERE name='"+name+"'";
+           
+            try{
+            int rs=DBUTILS.queryUpdate(query);
+                    
+
+            JOptionPane.showMessageDialog(this,"Update Successful.");
+             showMealEntryTable();
+        }catch(Exception e){
+            e.printStackTrace();
+        }        
+        }
+        if("31".equals(date)){
+               
+           String query="UPDATE meal_entry SET ee = '"+total_meal+"'WHERE name='"+name+"'";
+           
+            try{
+            int rs=DBUTILS.queryUpdate(query);
+           
             JOptionPane.showMessageDialog(this,"Update Successful.");
              showMealEntryTable();
         }catch(Exception e){
@@ -255,6 +714,15 @@ public class Meal_Entry_Page extends javax.swing.JFrame {
         }        
         }
         
+        
+        
+        
+        
+        
+         
+             
+       // showMealEntryTable();
+        }
         
     }//GEN-LAST:event_enter_buttonActionPerformed
 
@@ -305,11 +773,16 @@ public class Meal_Entry_Page extends javax.swing.JFrame {
     private javax.swing.JTextField dinner_me;
     private javax.swing.JButton enter_button;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;

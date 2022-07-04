@@ -316,7 +316,8 @@ public class SchedulePage extends javax.swing.JFrame {
     private void search_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_search_buttonActionPerformed
         String day_st = day_select.getSelectedItem().toString();
         String meal_time_st = meal_time.getSelectedItem().toString();
-        //String meal_change_st = change_meal.getText(); 
+       
+        
         String query="select * from schedule_table where DAY='"+day_st+"'";
        
        if(meal_time_st=="Breakfast"){

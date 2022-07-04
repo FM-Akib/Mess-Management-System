@@ -30,7 +30,7 @@ public class MemberPage extends javax.swing.JFrame {
         DefaultTableModel memberModel= new DefaultTableModel(columnNames,0);
         String query= "select *from user_login";
         try{
-            //String query;
+           
         ResultSet rs = DBUTILS.queryExecute(query);
         while(rs.next()){
             String Name=rs.getString("name");
